@@ -5,7 +5,7 @@ json-y object testing in go
 ## Installation
 
 ```
-go get github.com/hopkinsth/go-ruler
+go get github.com/orandin/go-ruler
 ```
 
 ## Introduction
@@ -27,7 +27,7 @@ Each of those objects (or 'filters') describes a condition for a property on som
 ```go
 package main
 
-import "github.com/hopkinsth/go-ruler"
+import "github.com/orandin/go-ruler"
 import "fmt"
 
 func main() {
@@ -59,7 +59,7 @@ func main() {
 ```
 
 ## License
-Copyright 2015 Thomas Hopkins
+Copyright 2020 Thomas Hopkins & Simon Delberghe
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 
