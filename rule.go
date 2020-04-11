@@ -1,5 +1,7 @@
 package ruler
 
+import "fmt"
+
 /*
 This struct is the main format for rules or conditions in ruler-compatable libraries.
 Here's a sample in JSON format:
@@ -18,6 +20,10 @@ type Rule struct {
 	Comparator string      `json:"comparator"`
 	Path       string      `json:"path"`
 	Value      interface{} `json:"value"`
+}
+
+func (r *Rule) String() string {
+	return fmt.Sprintf(`Comparator="%s" Path="%s" Value="%v"`, r.Comparator, r.Path, r.Value)
 }
 
 /*
